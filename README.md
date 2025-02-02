@@ -53,9 +53,9 @@ python3 main.py -a APIKEY -d tesla.com
 ---
 
 ## 📂 Output Files
-- `results/shodan_results.txt` - Shodan scan results.
-- `results/nmap_results.txt` - Nmap scan output.
-- `results/nuclei_results.txt` - Nuclei vulnerability findings.
+- `/shodan_results.txt` - Shodan scan results.
+- `/nmap_results.txt` - Nmap scan output.
+- `/nuclei_results.txt` - Nuclei vulnerability findings.
 
 ---
 
