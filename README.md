@@ -1,4 +1,4 @@
-# MoriVic - Automated Reconnaissance Tool
+# MoriVic
 
 **MoriVic** is an automated reconnaissance tool that integrates **Shodan**, **Nmap**, and **Nuclei** to identify and assess security risks in publicly exposed assets. It simplifies the process of discovering open ports, vulnerabilities, and misconfigurations.
 
@@ -42,12 +42,12 @@ pip install -r requirements.txt
 ## 🎯 Usage
 Run the tool with your **Shodan API key** and **target domain**:
 ```sh
-python3 morivic.py -a YOUR_SHODAN_API_KEY -d TARGET_DOMAIN
+python3 main.py -a YOUR_SHODAN_API_KEY -d TARGET_DOMAIN
 ```
 
 ### **Example:**
 ```sh
-python3 morivic.py -a QuVzwE2PaaucDP0pGEJ1098kaz1QkcQZ -d tesla.com
+python3 main.py -a APIKEY -d tesla.com
 ```
 
 ---
