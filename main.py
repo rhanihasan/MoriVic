@@ -90,8 +90,13 @@ def run_nmap_scan():
 
 def run_nuclei_scan():
     try:
-        print("Running Nuclei on the generated input...")
-        subprocess.run(["nuclei", "-l", "nuclei_input.txt", "-nt", "-o", "nuclei_results.txt"], check=True)
+        print("Running Nuclei with all available templates...")
+        subprocess.run([
+            "nuclei", "-l", "nuclei_input.txt",
+            "-nt",  # Auto-update templates
+            "-as",  # Run all templates (all-severity)
+            "-o", "nuclei_results.txt"
+        ], check=True)
         print("Nuclei scan completed. Results saved in nuclei_results.txt.")
     except FileNotFoundError:
         print("Error: Nuclei is not installed or not found in PATH.")
